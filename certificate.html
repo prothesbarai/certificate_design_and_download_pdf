@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Certificate Demo</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body
+    style="height:100%;margin:0;padding:20px;background:#e9e6e2;font-family:'Montserrat',Arial,sans-serif;color:#111;">
+
+    <div class="certificate-wrap" role="document" aria-label="Certificate"
+        style="width:1000px;max-width:calc(100%-40px);margin:24px auto;padding:36px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,0.12);position:relative;border:6px solid #111;box-sizing:border-box;" id="certificate">
+
+        <!-- inner thin border -->
+        <div
+            style="content:'';position:absolute;top:14px;left:14px;right:14px;bottom:14px;border:2px solid #111;pointer-events:none;">
+        </div>
+
+        <div class="header-small"
+            style="text-align:center;font-family:'Playfair Display',serif;font-size:16px;letter-spacing:1px;margin-top:4px;color:#222;">
+            The Executive Director and Faculty
+        </div>
+        <div class="header-small"
+            style="text-align:center;font-family:'Playfair Display',serif;font-size:16px;letter-spacing:1px;margin-top:4px;margin-bottom:6px;color:#222;">
+            of
+        </div>
+
+        <div class="university-title"
+            style="text-align:center;margin-top:6px;margin-bottom:12px;font-family:'Cinzel Decorative',serif;font-size:52px;line-height:0.9;letter-spacing:1px;color:#111;">
+            Software Engineering</div>
+
+        <div class="sub-heading"
+            style="text-align:center;font-family:'Playfair Display',serif;font-size:12px;color:#333;margin-bottom:18px;">
+            To all whom these presents may come, Greeting: Whereas</div>
+
+        <div class="recipient"
+            style="text-align:center;font-family:'Montserrat',sans-serif;font-size:22px;font-weight:600;margin-bottom:10px;">
+            Prothes Barai</div>
+
+        <div class="lead-text"
+            style="text-align:center;font-family:'Great Vibes',cursive;font-size:28px;margin:6px 0 18px 0;color:#111;">
+            Has successfully completed the following software engineering topics.<br>
+            We under authority invested in us, do hereby confer a Certificate of Completion
+        </div>
+
+        <div class="certificate-title"
+            style="text-align:center;font-family:'Playfair Display',serif;font-size:36px;font-weight:700;margin:8px 0 14px 0;">
+            Advanced Software Development</div>
+
+        <div class="description"
+            style="max-width:860px;margin:0 auto 22px auto;text-align:center;font-size:14px;line-height:1.45;color:#222;font-family:'Montserrat',sans-serif;">
+             Programming Fundamentals, Object-Oriented Design, Data Structures & Algorithms, Software Testing, Version Control (Git), Web Development, Mobile App Development, Cloud Computing, DevOps Practices, Cybersecurity Fundamentals, Software Project Management
+        </div>
+
+        <div class="divider-dot" style="text-align:center;margin:8px 0 22px 0;color:#999;font-size:18px;">.</div>
+
+        <!-- signatures and seal -->
+        <div class="signs-center"
+            style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:6px;max-width:860px;margin-left:auto;margin-right:auto;">
+            <div class="sign-block"
+                style="flex:1 1 0;text-align:left;font-family:'Montserrat',sans-serif;font-size:12px;">
+                <div class="sign-line"
+                    style="height:60px;display:flex;align-items:flex-end;justify-content:center;margin-bottom:6px;">
+                </div>
+                <div style="font-weight:600;">Sham Saha</div>
+                <div class="sign-caption" style="font-size:11px;color:#333;margin-top:6px;">Senior Software Engineer</div>
+                <p>____________________</p>
+            </div>
+
+            <div class="seal"
+                style="width:120px;height:120px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 8px;flex:0 0 140px;background: radial-gradient(circle at 35% 35%, #ffefef, #f2dede);border:4px solid #7b0b0b;">
+                <svg width="84" height="84" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Seal">
+                    <circle cx="50" cy="50" r="46" fill="#7b0b0b" />
+                    <circle cx="50" cy="50" r="38" fill="#fff" />
+                    <text x="50" y="54" text-anchor="middle" font-family="Cinzel Decorative" font-size="18"
+                        fill="#7b0b0b">SE</text>
+                </svg>
+            </div>
+
+            <div class="sign-block"
+                style="flex:1 1 0;text-align:right;font-family:'Montserrat',sans-serif;font-size:12px;">
+                <div class="sign-line"
+                    style="height:60px;display:flex;align-items:flex-end;justify-content:center;margin-bottom:6px;">
+                </div>
+                <div style="font-weight:600;">Engr. Ram Krishna Paul</div>
+                <div class="sign-caption" style="font-size:11px;color:#333;margin-top:6px;">Head of Software Engineering</div>
+                <p>____________________</p>
+            </div>
+        
+        </div>
+
+        <div style="text-align:center;margin-top:18px;font-size:11px;color:#666;">Certificate ID:
+            <strong>SE-2025-0001</strong>
+        </div>
+    </div>
+
+
+
+
+    <!-- Download Certificate -->
+    <div style="text-align:center; margin-top:20px;">
+        <button onclick="downloadPDF()"
+            style="padding:10px 20px; border:none; background:#7b0b0b; color:#fff; border-radius:5px; cursor:pointer; font-weight:bold;">
+            Download Certificate
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadPDF() {
+            var element = document.getElementById('certificate');
+            var opt = {
+                margin: 0,
+                filename: 'certificate.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: [14, 11], orientation: 'landscape' }
+            };
+            html2pdf().set(opt).from(element).save();
+        }    
+    </script>
+</body>
+
+</html>
