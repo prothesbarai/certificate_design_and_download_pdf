@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;600&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body style="margin:0;padding:0;background:#eaeaea;">
+    <div id="cert" style="position:relative;width:900px;height:700px;margin:20px auto;background:#fff;
+         border:10px solid #f5a623;box-shadow:0 0 10px rgba(0,0,0,0.2);
+         font-family:Arial, sans-serif;text-align:center;padding:40px;box-sizing:border-box;">
+
+        <!-- Watermark -->
+        <div
+            style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.08;z-index:0;display:flex;align-items:center;justify-content:center;width:40%;height:100%;pointer-events:none;">
+            <img id="wm" src="driving_certificate_logo.png" alt="watermark"
+                style="max-width:none;width:1500px;height:auto;display:block;" />
+        </div>
+
+        <div
+            style="position:absolute;bottom:120px;left:50%;transform:translateX(-50%);opacity:0.2;font-size:24px;z-index:0;">
+            www.prothes.com</div>
+
+        <!-- Logo -->
+        <img id="logo" src="driving_certificate_logo.png" alt="logo"
+            style="width:100px;display:block;margin:0 auto;z-index:1;position:relative;">
+
+        <h1 style="color:#f5a623;font-weight:bold;margin:10px 0;letter-spacing:2px;z-index:1;position:relative;">
+            MOHONA DRIVING TRAINING CENTER
+        </h1>
+        <p style="margin:0;font-size:14px;z-index:1;position:relative;">
+            Gov/Reg. No. 109/2017 &nbsp;&nbsp;
+            <span style="background:#f5a623;color:#fff;padding:2px 6px;">SL NO: 5801</span><br><br>
+            House:14, Road:10, Dhanmondi, Dhaka-1205, Bangladesh. Cell: +8801521-229494
+        </p>
+
+        <h2 style="margin-top:30px;color:#7a5c36;z-index:1;position:relative;font-family:'Cinzel Decorative',serif;">
+            Certificate of Driving
+        </h2>
+        <p style="margin-top:10px;font-size:16px;z-index:1;position:relative;">
+            This certificate is proudly presented to
+        </p>
+        <h2 style="font-family:cursive;margin:5px 0;color:#333;z-index:1;position:relative; font-family:'Great Vibes',cursive;">
+            Prothes Barai
+        </h2>
+        <p style="font-size:16px;z-index:1;position:relative;">
+            For successfully completing the course:<br>
+            Advanced Driving Training (Automatic Car) Total Class: 34, Total Driving Time: 15 Hours.
+        </p>
+        <p style="margin:20px auto;font-size:14px;width:80%;line-height:1.5;z-index:1;position:relative;">
+            Daughter of Mohammad Arifur Rahman, she has successfully completed the Driving Training Course from
+            July 1, 2025, to August 1, 2025. During the training, her performance was found to be satisfactory,
+            and she consistently maintained discipline and dedication throughout the course.
+        </p>
+
+        <div style="position:absolute;bottom:50px;right:100px;z-index:1;font-size:14px;">
+            ________________________<br><br>
+            Authority signature
+        </div>
+        <div style="position:absolute;bottom:30px;right:150px;z-index:1;font-size:14px;">
+            Date of Issue
+        </div>
+
+        <!-- QR Code -->
+        <div style="position:absolute;bottom:30px;left:30px;z-index:1;">
+            <canvas id="qrcode"></canvas>
+        </div>
+    </div>
+
+    <!-- QR Generator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script>
+        let link = "https://www.prothesbarai.com";
+        const qr = new QRious({
+            element: document.getElementById('qrcode'),
+            value: link,
+            size: 100
+        });
+        // To change link dynamically, just update link and call qr.value = newLink;
+    </script>
+</body>
+
+</html>
